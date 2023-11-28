@@ -8,12 +8,23 @@ h1 {
     color: #333;
 }
 
+.products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
 .product {
-    margin: 20px;
+    flex: 0 1 auto;
     border: 1px solid #ddd;
     padding: 20px;
     background-color: white;
+    max-width: 300px; 
 }
+
 
 .Hotspot {
     background-color: #ffffff;

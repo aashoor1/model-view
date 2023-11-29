@@ -19,3 +19,21 @@ document.getElementById("change-colour").addEventListener("click", function() {
     document.getElementById("model").src = myModels[counter];
 });
 
+// Product size and dimensions
+
+function showDimensions(product) {
+    let dimensions = '';
+    switch (product) {
+        case 'beanbag':
+            dimensions = 'Beanbag: Diameter (3ft), Height 2(ft)';
+            break;
+        case 'bookcase':
+            dimensions = 'Bookcase: Width (3ft), Depth (0.5ft), Height (1ft)';
+            break;
+        case 'chair':
+            dimensions = 'Chair: Width (1ft), Depth (1ft), Height (2ft)';
+            break;
+    }
+    alert(dimensions);
+}
+

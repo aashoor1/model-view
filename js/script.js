@@ -1,25 +1,5 @@
-// simple change model
-document.getElementById("change-colour").addEventListener("click", function() {
-    document.getElementById("model").src = "/models/teal.glb";
-});
 
-// example with showing content
-document.getElementById("change-colour").addEventListener("click", function() {
-    document.getElementById("model-info").style.display = "block";
-});
-
-// example with multiple models
-var myModels = ["/models/orange.glb", "/models/teal.glb", "/models/orange.glb", "/models/teal.glb",]
-var counter = 0;
-document.getElementById("change-colour").addEventListener("click", function() {
-    counter++;
-    if (counter==3) { 
-        counter = 0;
-    }
-    document.getElementById("model").src = myModels[counter];
-});
-
-// Product size and dimensions
+// Function to display product dimensions
 
 function showDimensions(product) {
     let dimensions = '';
@@ -35,5 +15,26 @@ function showDimensions(product) {
             break;
     }
     alert(dimensions);
+}
+
+// Function for swapping model
+
+function swapModel(product) {
+    let modelViewer = document.getElementById(product);
+    let newSrc = '';
+
+    switch (product) {
+        case 'beanbag':
+            newSrc = modelViewer.src.includes('beanbag_alternate.glb') ? 'models/beanbag.glb' : 'models/beanbag_alternate.glb';
+            break;
+        case 'bookcase':
+            newSrc = modelViewer.src.includes('bookcase_alternate.glb') ? 'models/bookcase.glb' : 'models/bookcase_alternate.glb';
+            break;
+        case 'chair':
+            newSrc = modelViewer.src.includes('chair_alternate.glb') ? 'models/chair.glb' : 'models/chair_alternate.glb';
+            break;
+    }
+
+    modelViewer.src = newSrc;
 }
 

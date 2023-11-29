@@ -13,44 +13,59 @@
     <div class="products-container">
         <!-- Beanbag -->
         <div class="product">
-            <model-viewer src="models/beanbag.glb" 
+            <model-viewer id="beanbag" src="models/beanbag.glb" 
                           poster="images/poster-beanbag.png" 
                           camera-controls 
                           auto-rotate 
                           ar>
+                <!-- Dimensions Hotspot -->
                 <button slot="hotspot-size-beanbag" data-position="0.5 0.8 0.5" data-normal="0 1 0" onclick="showDimensions('beanbag')">
                     Dimensions
                 </button>
+                <!-- Swap Color Hotspot -->
+                <button slot="hotspot-swap-beanbag" data-position="0.5 0.5 0.5" data-normal="0 1 0" onclick="swapModel('beanbag')">
+                    Swap Color
+                </button>
             </model-viewer>
-            <p>Beanbag</p>
+            <p>LuxeSphere Comfort Beanbag</p>
         </div>
 
         <!-- Bookcase -->
         <div class="product">
-            <model-viewer src="models/bookcase.glb" 
+            <model-viewer id="bookcase" src="models/bookcase.glb" 
                           poster="images/poster-bookcase.png" 
                           camera-controls 
                           auto-rotate 
                           ar>
+                <!-- Dimensions Hotspot -->
                 <button slot="hotspot-size-bookcase" data-position="0.5 1.5 0.5" data-normal="0 1 0" onclick="showDimensions('bookcase')">
                     Dimensions
                 </button>
+                <!-- Swap Color Hotspot -->
+                <button slot="hotspot-swap-bookcase" data-position="0.5 1 0.5" data-normal="0 1 0" onclick="swapModel('bookcase')">
+                    Swap Color
+                </button>
             </model-viewer>
-            <p>Bookcase</p>
+            <p>Moduluxe Linear Bookcase</p>
         </div>
 
         <!-- Chair -->
         <div class="product">
-            <model-viewer src="models/chair.glb" 
+            <model-viewer id="chair" src="models/chair.glb" 
                           poster="images/poster-chair.png" 
                           camera-controls 
                           auto-rotate 
                           ar>
+                <!-- Dimensions Hotspot -->
                 <button slot="hotspot-size-chair" data-position="0.5 1 0.5" data-normal="0 1 0" onclick="showDimensions('chair')">
                     Dimensions
                 </button>
+                <!-- Swap Color Hotspot -->
+                <button slot="hotspot-swap-chair" data-position="0.5 0.5 0.5" data-normal="0 1 0" onclick="swapModel('chair')">
+                    Swap Color
+                </button>
             </model-viewer>
-            <p>Chair</p>
+            <p>Avalon Elegance Chair</p>
         </div>
     </div>
 
